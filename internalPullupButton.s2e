@@ -1,0 +1,28 @@
+{
+	"extensionName": "Dahili Pullup Butonu",
+	"description": "Arduino dahili pullup direncini kullanan buton",
+	"version": "1.0",
+	"author": "Mustafa Burak Kalkan (mburakkalkan@gmail.com)",
+	"homepage": "",
+	"sort":0,
+	"javascriptURL":"js/internalPullupButton.js",
+  "firmware":"1.0",
+  "extensionPort":0,
+	"blockSpecs": [
+		[
+			"b",
+			"%n pinindeki pullup butonu oku",
+			"internalPullupButton",
+			"1",
+			{
+				"setup":"pinMode({0}, INPUT_PULLUP);\n",
+				"inc":"",
+				"def":"",
+				"work":"digitalRead({0})",
+				"loop":""
+			}
+		]
+	],
+	"translators": {
+	}
+}
